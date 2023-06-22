@@ -1,19 +1,19 @@
 <div class="sidebar">
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" style="background-color: #27293d;">
         <div class="logo">
             {{-- <a href="#" class="simple-text logo-mini">{{ __('BD') }}</a> --}}
             <a href="#" class="simple-text logo-normal">{{ __('Vetguard') }}</a>
         </div>
         <ul class="nav">
-            {{-- <li @if ($pageSlug == 'dashboard') class="active " @endif>
+            <li @if ($pageSlug == 'dashboard') class="active " @endif>
                 <a href="{{ route('home') }}">
-                    <i class="tim-icons icon-chart-pie-36"></i>
+                    <i class="fas fa-chart-pie"></i>
                     <p>{{ __('Dashboard') }}</p>
                 </a>
-            </li> --}}
+            </li>
             <li>
                 <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
-                    <i class="fab fa-laravel" ></i>
+                    <i class="fas fa-users" ></i>
                     <span class="nav-link-text" >{{ __('user management') }}</span>
                     <b class="caret mt-1"></b>
                 </a>
@@ -22,37 +22,42 @@
                     <ul class="nav pl-4">
                         <li @if ($pageSlug == 'profile') class="active " @endif>
                             <a href="{{ route('profile.edit')  }}">
-                                <i class="tim-icons icon-single-02"></i>
-                                <p>{{ __('User Profile') }}</p>
+                                <i class="fas fa-handshake"></i>
+                                <p>{{ __('Admin Users') }}</p>
                             </a>
                         </li>
                         <li @if ($pageSlug == 'users') class="active " @endif>
                             <a href="{{ route('user.index')  }}">
-                                <i class="tim-icons icon-bullet-list-67"></i>
-                                <p>{{ __('User Management') }}</p>
+                                <i class="far fa-id-badge"></i>
+                                <p>{{ __('App Users') }}</p>
                             </a>
                         </li>
                     </ul>
                 </div>
             </li>
-            {{-- <li @if ($pageSlug == 'icons') class="active " @endif>
+            <li @if ($pageSlug == 'icons') class="active " @endif>
                 <a href="{{ route('pages.icons') }}">
-                    <i class="tim-icons icon-atom"></i>
-                    <p>{{ __('Icons') }}</p>
+                    <i class="fa fa-list-ul"></i>
+                    <p>{{ __('Mission') }}</p>
                 </a>
             </li>
             <li @if ($pageSlug == 'maps') class="active " @endif>
                 <a href="{{ route('pages.maps') }}">
-                    <i class="tim-icons icon-pin"></i>
-                    <p>{{ __('Maps') }}</p>
+                    <i class="fa fa-database"></i>
+                    <p>{{ __('Library') }}</p>
                 </a>
             </li>
             <li @if ($pageSlug == 'notifications') class="active " @endif>
                 <a href="{{ route('pages.notifications') }}">
-                    <i class="tim-icons icon-bell-55"></i>
-                    <p>{{ __('Notifications') }}</p>
+                    <i class="fa fa-bell"></i>
+                    <p>{{ __('Workshop') }}</p>
                 </a>
             </li>
+
+            {{-- <br />
+            <br />
+            <br />
+            <br />
             <li @if ($pageSlug == 'tables') class="active " @endif>
                 <a href="{{ route('pages.tables') }}">
                     <i class="tim-icons icon-puzzle-10"></i>
