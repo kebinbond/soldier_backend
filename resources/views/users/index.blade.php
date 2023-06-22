@@ -60,20 +60,20 @@
                         <div class="sidebar">
                                 <div class="sidebar-wrapper">
                                     <div class="logo">
-                                        <a href="#" class="simple-text logo-mini">{{ _('BD') }}</a>
-                                        <a href="#" class="simple-text logo-normal">{{ _('Black Dashboard') }}</a>
+                                        {{-- <a href="#" class="simple-text logo-mini">{{ _('BD') }}</a> --}}
+                                        <a href="#" class="simple-text logo-normal">{{ _('vetguard') }}</a>
                                     </div>
                                     <ul class="nav">
-                                        <li>
+                                        {{-- <li>
                                             <a href="{{ route('home') }}">
                                                 <i class="tim-icons icon-chart-pie-36"></i>
                                                 <p>{{ _('Dashboard') }}</p>
                                             </a>
-                                        </li>
+                                        </li> --}}
                                         <li>
                                             <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
                                                 <i class="fab fa-laravel" ></i>
-                                                <span class="nav-link-text" >{{ __('Laravel Examples') }}</span>
+                                                <span class="nav-link-text" >{{ __('user management') }}</span>
                                                 <b class="caret mt-1"></b>
                                             </a>
                             
@@ -94,7 +94,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li >
+                                        {{-- <li >
                                             <a href="{{ route('pages.icons') }}">
                                                 <i class="tim-icons icon-atom"></i>
                                                 <p>{{ _('Icons') }}</p>
@@ -129,13 +129,13 @@
                                                 <i class="tim-icons icon-world"></i>
                                                 <p>{{ _('RTL Support') }}</p>
                                             </a>
-                                        </li>
-                                        <li class=" {{ $pageSlug == 'upgrade' ? 'active' : '' }} bg-info">
+                                        </li> --}}
+                                        {{-- <li class=" {{ $pageSlug == 'upgrade' ? 'active' : '' }} bg-info">
                                             <a href="{{ route('pages.upgrade') }}">
                                                 <i class="tim-icons icon-spaceship"></i>
                                                 <p>{{ _('Upgrade to PRO') }}</p>
                                             </a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -304,7 +304,7 @@
 
                 <footer class="footer">
 <div class="container-fluid">
-    <ul class="nav">
+    {{-- <ul class="nav">
         <li class="nav-item">
             <a href="https://creative-tim.com" target="blank" class="nav-link">
                 Creative Tim
@@ -330,14 +330,14 @@
         © 2020 made with <i class="tim-icons icon-heart-2"></i> by
         <a href="https://creative-tim.com" target="_blank">Creative Tim</a> &amp;
         <a href="https://updivision.com" target="_blank">Updivision</a> for a better web.
-    </div>
+    </div> --}}
 </div>
 </footer>
             </div>
         </div>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             <input type="hidden" name="_token" value="ub2DzAIrgUnghVvu3l3KAbbq0UztNO8yfkrDNm6n">            </form>
-            <div class="fixed-plugin">
+            {{-- <div class="fixed-plugin"> --}}
         <div class="dropdown show-dropdown">
             <a href="#" data-toggle="dropdown">
             <i class="fa fa-cog fa-2x"> </i>

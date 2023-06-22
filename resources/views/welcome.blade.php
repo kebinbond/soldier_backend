@@ -5,10 +5,10 @@
         <div class="container">
             <div class="header-body text-center mb-7">
                 <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-6">
-                        <h1 class="text-white">{{ __('Welcome!') }}</h1>
+                    <div class="col-lg-8 col-md-8">
+                        <h1 class="text-white">{{ __('Welcome To Vetguard Server!') }}</h1>
                         <p class="text-lead text-light">
-                            {{ __('Use Black Dashboard theme to create a great project.') }}
+                            {{ __('Let\'s save many people by letting them know the beauty of life.') }}
                         </p>
                     </div>
                 </div>

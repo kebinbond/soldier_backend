@@ -8,7 +8,7 @@
             <div class="card card-login card-white">
                 <div class="card-header">
                     <img src="{{ asset('black') }}/img/card-primary.png" alt="">
-                    <h1 class="card-title">{{ __('Reset password') }}</h1>
+                    <h1 class="card-title mt-3 ml-3">{{ __('Reset password') }}</h1>
                 </div>
                 <div class="card-body">
                     @include('alerts.success')

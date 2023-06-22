@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-5 ml-auto">
+        {{-- <div class="col-md-5 ml-auto">
             <div class="info-area info-horizontal mt-5">
                 <div class="icon icon-warning">
                     <i class="tim-icons icon-wifi"></i>
@@ -36,14 +36,18 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-7 mr-auto">
+        </div> --}}
+        <div class="col-md-7 mr-auto ml-auto">
             <div class="card card-register card-white">
                 <div class="card-header">
-                    <img class="card-img" src="{{ asset('black') }}/img/card-primary.png" alt="Card image">
-                    <h4 class="card-title">{{ __('Register') }}</h4>
+                    <img src="{{ asset('black') }}/img/card-primary.png" alt="" style="position: absolute">
+                    <h4 class="card-title mt-3 ml-3">{{ __('Register') }}</h1>
                 </div>
-                <form class="form" method="post" action="{{ route('register') }}">
+                {{-- <div class="card-header">
+                    <img src="{{ asset('black') }}/img/card-primary.png" alt="Card image">
+                    <h4 class="card-title">{{ __('Register') }}</h4>
+                </div> --}}
+                <form class="form mt-5" method="post" action="{{ route('register') }}" style="z-index: 1">
                     @csrf
 
                     <div class="card-body">
@@ -82,17 +86,17 @@
                             </div>
                             <input type="password" name="password_confirmation" class="form-control" placeholder="{{ __('Confirm Password') }}">
                         </div>
-                        <div class="form-check text-left">
+                        {{-- <div class="form-check text-left">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox">
+                                <input class="form-check-input" type="checkbox" value="false">
                                 <span class="form-check-sign"></span>
                                 {{ __('I agree to the') }}
                                 <a href="#">{{ __('terms and conditions') }}</a>.
                             </label>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary btn-round btn-lg">{{ __('Get Started') }}</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-3">{{ __('Get Started') }}</button>
                     </div>
                 </form>
             </div>
