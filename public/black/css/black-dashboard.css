@@ -10722,7 +10722,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .btn-primary.active:focus,
 .btn-primary.active:hover {
   background-color: #ba54f5 !important;
-  background-image: linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca) !important;
+  background-image: linear-gradient(to bottom left, #d5b7d0, #ded8e2, #a07f9b) !important;
   background-image: -webkit-linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca) !important;
   background-image: -o-linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca) !important;
   background-image: -moz-linear-gradient(to bottom left, #e14eca, #ba54f5, #e14eca) !important;
