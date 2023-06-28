@@ -14,22 +14,12 @@ class AppUserController extends Controller
         return view('pages.members', ['members' => $model->paginate(15)]);
     }
     public function register (Request $request) {
-
-        // $Validator = Validator::make($request, [
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        //     'password' => ['required', 'string', 'min:8', 'confirmed'],
-        //     'phone' => ['required', 'string'],
-        // ]);
-
         return AppUser::create([
             'name' => $request['username'],
             'email' => $request['email'],
             'phone_number' => $request['phone'],
             'password' => Hash::make($request['password']),
         ]);
-
-        // return response()->json($Validator, 200);
     }
 
     public function update(Request $request, $id) {

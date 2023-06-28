@@ -28,6 +28,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/members/{user}/status', 'App\Http\Controllers\AppUserController@update')->name('members.update');
     Route::delete('/members/{id}', 'App\Http\Controllers\AppUserController@destroy')->name('members.delete');
 
+    Route::get('course', ['as' => 'pages.course', 'uses' => 'App\Http\Controllers\CourseController@get']);
+
+    Route::get('community', ['as' => 'pages.community', 'uses' => 'App\Http\Controllers\CommunityController@get']);
+
+    Route::get('job', ['as' => 'pages.job', 'uses' => 'App\Http\Controllers\JobController@get']);
+
+    Route::get('article', ['as' => 'pages.article', 'uses' => 'App\Http\Controllers\ArticleController@get']);
+
+    Route::get('video', ['as' => 'pages.video', 'uses' => 'App\Http\Controllers\VideoController@get']);
+
+    Route::get('podcast', ['as' => 'pages.podcast', 'uses' => 'App\Http\Controllers\PodcastController@get']);
+
 	Route::get('icons', ['as' => 'pages.icons', 'uses' => 'App\Http\Controllers\PageController@icons']);
 	Route::get('maps', ['as' => 'pages.maps', 'uses' => 'App\Http\Controllers\PageController@maps']);
 	Route::get('notifications', ['as' => 'pages.notifications', 'uses' => 'App\Http\Controllers\PageController@notifications']);
