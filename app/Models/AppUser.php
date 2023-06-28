@@ -9,10 +9,11 @@ class AppUser extends Model
 {
     use HasFactory;
 
-    protected $fillabe = [
+    protected $fillable = [
         'name',
         'email',
         'password',
+        'status',
         'phone_number'
     ];
 

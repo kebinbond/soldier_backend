@@ -12,22 +12,22 @@
                 </a>
             </li>
             <li>
-                <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
+                <a data-toggle="collapse" href="#user-management" aria-expanded="true">
                     <i class="fas fa-users" ></i>
                     <span class="nav-link-text" >{{ __('user management') }}</span>
                     <b class="caret mt-1"></b>
                 </a>
 
-                <div class="collapse show" id="laravel-examples">
+                <div class="collapse show" id="user-management">
                     <ul class="nav pl-4">
-                        <li @if ($pageSlug == 'profile') class="active " @endif>
-                            <a href="{{ route('profile.edit')  }}">
+                        <li @if ($pageSlug == 'users') class="active " @endif>
+                            <a href="{{ route('user.index')  }}">
                                 <i class="fas fa-handshake"></i>
                                 <p>{{ __('Admin Users') }}</p>
                             </a>
                         </li>
-                        <li @if ($pageSlug == 'users') class="active " @endif>
-                            <a href="{{ route('user.index')  }}">
+                        <li @if ($pageSlug == 'members') class="active " @endif>
+                            <a href="{{ route('pages.members')  }}">
                                 <i class="far fa-id-badge"></i>
                                 <p>{{ __('App Users') }}</p>
                             </a>

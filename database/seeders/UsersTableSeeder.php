@@ -20,6 +20,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@black.com',
             'email_verified_at' => now(),
             'password' => Hash::make('secret'),
+            'status' => true,
             'created_at' => now(),
             'updated_at' => now()
         ]);

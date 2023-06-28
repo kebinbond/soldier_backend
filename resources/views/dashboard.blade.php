@@ -376,6 +376,7 @@
     <script>
         $(document).ready(function() {
           demo.initDashboardPageCharts();
+          console.log('asdfasdfasdf');
         });
     </script>
 @endpush
