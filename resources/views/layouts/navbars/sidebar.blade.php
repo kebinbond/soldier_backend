@@ -101,7 +101,7 @@
             </li>
 
 
-
+{{--
             <br />
             <br />
             <br />
@@ -141,7 +141,7 @@
                     <i class="tim-icons icon-spaceship"></i>
                     <p>{{ __('Upgrade to PRO') }}</p>
                 </a>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>
