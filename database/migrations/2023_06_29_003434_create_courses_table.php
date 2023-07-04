@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('subject');
             $table->string('description');
-            $table->integer('lessons');
+            $table->integer('lessons')->default(0);
             $table->timestamps();
         });
     }

@@ -24,11 +24,13 @@ Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->
 
 Route::group(['middleware' => 'auth'], function () {
 
+    Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
     Route::get('members', ['as' => 'pages.members', 'uses' => 'App\Http\Controllers\AppUserController@get']);
     Route::put('/members/{user}/status', 'App\Http\Controllers\AppUserController@update')->name('members.update');
     Route::delete('/members/{id}', 'App\Http\Controllers\AppUserController@destroy')->name('members.delete');
 
     Route::get('course', ['as' => 'pages.course', 'uses' => 'App\Http\Controllers\CourseController@get']);
+    Route::post('/course', 'App\Http\Controllers\CourseController@store')->name('course.store');
 
     Route::get('community', ['as' => 'pages.community', 'uses' => 'App\Http\Controllers\CommunityController@get']);
 
